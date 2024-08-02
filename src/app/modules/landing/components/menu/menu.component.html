@@ -1,4 +1,4 @@
-<nav ngClass="navbar navbar-expand-lg navbar-light bg-light">
+<nav ngClass="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div ngClass="container-fluid">
         <a ngClass="navbar-brand" routerLink="/">
             <img src="./image/logo.png" alt="logo" [height]="'70'" [width]="'90'">
@@ -10,10 +10,12 @@
     </div>
     <div ngClass="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
         <div ngClass="navbar-nav">
-            <a ngClass="nav-link active" aria-current="page" routerLink="/">Home</a>
-            <a ngClass="nav-link" routerLink="">Features</a>
-            <a ngClass="nav-link" href="#">Pricing</a>
-            <a ngClass="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a ngClass="nav-link active" aria-current="page" href="#home">Home</a>
+            <a ngClass="nav-link" href="#doctors">Doctors</a>
+            <a ngClass="nav-link" href="#services">Service</a>
+            <a ngClass="nav-link" routerLink="">Login</a>
+            <a ngClass="nav-link" href="#contact">Contact</a>
+
         </div>
     </div>
 </nav>

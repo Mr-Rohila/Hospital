@@ -1,2 +1,119 @@
 <app-menu></app-menu>
-<h1>HomePage</h1>
+
+<div ngClass="container-fluid" id="home">
+    <header ngClass="bg-primary text-white text-center py-3">
+        <h1>Welcome to <strong [innerHTML]="typedText"></strong>
+            <i class="fas fa-pencil-alt text-dark h2"></i>
+        </h1>
+        <p>Your health, our priority</p>
+    </header>
+
+    <section ngClass="hero bg-light text-center py-5">
+        <div ngClass="container">
+            <h2>Quality Care for Your Family</h2>
+            <p>We offer the best healthcare services with compassionate and experienced professionals.</p>
+            <a href="#services" ngClass="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <section id="doctors" ngClass="py-5">
+        <div ngClass="container">
+            <h2 ngClass="text-center mb-4">Our Doctors</h2>
+            <div ngClass="row">
+                <div ngClass="col-md-4 mb-4">
+                    <div ngClass="card">
+                        <img src="/image/doctor-1.png" ngClass="card-img-top" alt="Doctor Image">
+                        <div ngClass="card-body">
+                            <h5 ngClass="card-title">Dr. Shashi Panday</h5>
+                            <p ngClass="card-text">Specialist in Cardiology</p>
+                            <a href="#" ngClass="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div ngClass="col-md-4 mb-4">
+                    <div ngClass="card">
+                        <img src="/image/doctor-2.png" ngClass="card-img-top" alt="Doctor Image">
+                        <div ngClass="card-body">
+                            <h5 ngClass="card-title">Dr. Ankush Rajput</h5>
+                            <p ngClass="card-text">Specialist in Cardiology</p>
+                            <a href="#" ngClass="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div ngClass="col-md-4 mb-4">
+                    <div ngClass="card">
+                        <img src="/image/doctor-0.png" ngClass="card-img-top img-thumbnail" alt="Doctor Image">
+                        <div ngClass="card-body">
+                            <h5 ngClass="card-title">Dr. Kamal Kumar</h5>
+                            <p ngClass="card-text">Specialist in Cardiology</p>
+                            <a href="#" ngClass="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" ngClass="bg-light py-5">
+        <div ngClass="container">
+            <h2 ngClass="text-center mb-4">Our Services</h2>
+            <div ngClass="row">
+                <div ngClass="col-md-4 mb-4">
+                    <div ngClass="card">
+                        <div ngClass="card-body">
+                            <h5 ngClass="card-title">Emergency Care</h5>
+                            <p ngClass="card-text">24/7 emergency services to provide immediate care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div ngClass="col-md-4 mb-4">
+                    <div ngClass="card">
+                        <div ngClass="card-body">
+                            <h5 ngClass="card-title">Outpatient Services</h5>
+                            <p ngClass="card-text">Routine check-ups and specialized consultations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div ngClass="col-md-4 mb-4">
+                    <div ngClass="card">
+                        <div ngClass="card-body">
+                            <h5 ngClass="card-title">Inpatient Care</h5>
+                            <p ngClass="card-text">Comprehensive care for patients admitted to the hospital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" ngClass="py-5">
+        <div ngClass="container">
+            <h2 ngClass="text-center mb-4">Contact Us</h2>
+            <form>
+                <div ngClass="row">
+                    <div ngClass="col-md-6 mb-3">
+                        <label for="name">Name</label>
+                        <input type="text" ngClass="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div ngClass="col-md-6 mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" ngClass="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div ngClass="mb-3">
+                    <label for="message">Message</label>
+                    <textarea ngClass="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" ngClass="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</div>
+
+<app-footer></app-footer>
