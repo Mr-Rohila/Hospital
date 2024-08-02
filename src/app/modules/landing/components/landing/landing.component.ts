@@ -14,6 +14,7 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class LandingComponent implements OnInit {
   ngZone = inject(NgZone);
+  
   typedText = '';
   text = 'A1 Hospital';
   i = 0;
