@@ -1,0 +1,20 @@
+<nav ngClass="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div ngClass="container-fluid">
+        <a ngClass="navbar-brand" routerLink="/">
+            <img src="./image/logo.png" alt="logo" [height]="'70'" [width]="'90'">
+        </a>
+        <button ngClass="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span ngClass="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div ngClass="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
+        <div ngClass="navbar-nav">
+            <a ngClass="nav-link active" aria-current="page" href="#home">Home</a>
+            <a ngClass="nav-link" href="#doctors">Doctors</a>
+            <a ngClass="nav-link" href="#services">Service</a>
+            <a ngClass="nav-link" routerLink="/super/dashboard">Login</a>
+            <a ngClass="nav-link" href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
